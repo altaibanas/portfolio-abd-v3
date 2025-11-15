@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من أنا - المحاسب المحترف | خدمات محاسبية ومراجعة متكاملة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- شريط التنقل -->
+    <nav class="nav-blur sticky top-0 z-50 py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- الشعار -->
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black text-gray-800">المحاسب المحترف</span>
+                        <p class="text-xs text-gray-500 mt-1">شريكك المالي الموثوق للنمو المستدام</p>
+                    </div>
+                </div>
+
+                <!-- روابط التنقل -->
+                <div class="hidden lg:flex space-x-8 space-x-reverse">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-700 transition">الرئيسية</a>
+                    <a href="about.html" class="nav-link text-blue-700 font-bold">من أنا</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-700 transition">الخدمات</a>
+                    <a href="blog.html" class="nav-link text-gray-600 hover:text-blue-700 transition">المدونة</a>
+                    <a href="contact.html" class="nav-link text-gray-600 hover:text-blue-700 transition">اتصل بي</a>
+                </div>
+
+                <!-- زر الاتصال -->
+                <div class="hidden md:block">
+                    <a href="contact.html" class="btn-primary">
+                        <i class="fas fa-phone ml-2"></i> احجز استشارة
+                    </a>
+                </div>
+
+                <!-- زر القائمة المنسدلة للجوال -->
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- القائمة المنسدلة للجوال -->
+            <div id="mobile-menu" class="hidden lg:hidden py-6 border-t border-gray-200 mt-4">
+                <a href="index.html" class="block py-3 text-gray-600 hover:text-blue-700 transition border-b border-gray-100">الرئيسية</a>
+                <a href="about.html" class="block py-3 text-blue-700 font-bold border-b border-gray-100">من أنا</a>
+                <a href="services.html" class="block py-3 text-gray-600 hover:text-blue-700 transition border-b border-gray-100">الخدمات</a>
+                <a href="blog.html" class="block py-3 text-gray-600 hover:text-blue-700 transition border-b border-gray-100">المدونة</a>
+                <a href="contact.html" class="block py-3 text-gray-600 hover:text-blue-700 transition">اتصل بي</a>
+                <div class="mt-6">
+                    <a href="contact.html" class="btn-primary w-full text-center block">
+                        <i class="fas fa-phone ml-2"></i> احجز استشارة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم البطل -->
+    <section class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-black mb-6">من أنا</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">محاسب محترف بخبرة تزيد عن 10 سنوات في مجال المحاسبة والمراجعة والتدقيق المالي</p>
+        </div>
+    </section>
+
+    <!-- المحتوى الرئيسي -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <!-- الصورة الشخصية -->
+                <div class="lg:w-2/5">
+                    <div class="bg-gradient-to-br from-blue-100 to-indigo-100 h-96 rounded-2xl flex items-center justify-center text-gray-500 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-indigo-900/20"></div>
+                        <div class="relative z-10 text-center">
+                            <i class="fas fa-user-tie text-6xl text-blue-700 mb-4"></i>
+                            <p class="text-blue-800 font-bold text-xl">سعيد العتيبي</p>
+                            <p class="text-blue-600 font-medium">محاسب قانوني معتمد</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-4">
+                        <div class="bg-blue-50 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-black text-blue-900">+10</div>
+                            <div class="text-blue-700 text-sm font-medium">سنوات خبرة</div>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-black text-blue-900">+150</div>
+                            <div class="text-blue-700 text-sm font-medium">عميل راضٍ</div>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-black text-blue-900">CPA</div>
+                            <div class="text-blue-700 text-sm font-medium">شهادة معتمدة</div>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-4 text-center">
+                            <div class="text-2xl font-black text-blue-900">100%</div>
+                            <div class="text-blue-700 text-sm font-medium">تسليم في الوقت</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- النص -->
+                <div class="lg:w-3/5">
+                    <h2 class="section-heading">سعيد العتيبي، محاسب قانوني معتمد</h2>
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                        أنا محاسب ومراجع قانوني معتمد، حاصل على شهادة المحاسب القانوني المعتمد (CPA) وعلى درجة الماجستير في المحاسبة والتمويل. لدي خبرة تزيد عن 10 سنوات في مجال المحاسبة والمراجعة والتدقيق المالي، عملت خلالها مع مجموعة متنوعة من العملاء من مختلف القطاعات.
+                    </p>
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                        أسعى دائمًا إلى تقديم خدمات محاسبية ومالية عالية الجودة تلبي احتياجات عملائي وتساعدهم على تحقيق أهدافهم التجارية. أؤمن بأن المحاسبة ليست مجرد تسجيل للمعاملات المالية، بل هي أداة استراتيجية لاتخاذ القرارات الصحيحة ودفع عجلة النمو.
+                    </p>
+                    <p class="text-gray-700 mb-8 text-lg leading-relaxed">
+                        أقدم خدماتي للشركات الصغيرة والمتوسطة وكذلك للأفراد، مع التركيز على تقديم حلول مالية مبتكرة ومخصصة تلبي الاحتياجات الفريدة لكل عميل.
+                    </p>
+
+                    <div class="bg-blue-50 rounded-2xl p-6 mb-8 border border-blue-100">
+                        <h3 class="subsection-heading flex items-center">
+                            <i class="fas fa-graduation-cap text-blue-700 ml-2"></i>
+                            شهاداتي ومؤهلاتي
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-500 ml-2"></i>
+                                <span class="text-gray-700 font-medium">محاسب قانوني معتمد (CPA)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-500 ml-2"></i>
+                                <span class="text-gray-700 font-medium">ماجستير في المحاسبة والتمويل</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-500 ml-2"></i>
+                                <span class="text-gray-700 font-medium">بكالوريوس في إدارة الأعمال تخصص محاسبة</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-500 ml-2"></i>
+                                <span class="text-gray-700 font-medium">شهادة مدقق داخلي معتمد (CIA)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn-primary inline-flex items-center">
+                        <i class="fas fa-calendar-check ml-2"></i> احجز استشارة مجانية
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخبرات -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="feature-badge">خبراتي العملية</span>
+                <h2 class="section-heading">رحلة مهنية حافلة بالإنجازات</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">مسيرة مهنية حافلة بالإنجازات والخبرات المتنوعة في مجال المحاسبة والمراجعة</p>
+            </div>
+
+            <div class="timeline">
+                <!-- خبرة 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content" data-aos="fade-up">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <h3 class="card-heading">مدير قسم المحاسبة</h3>
+                            <span class="text-blue-600 font-bold bg-blue-100 px-3 py-1 rounded-full">2020 - الحاضر</span>
+                        </div>
+                        <p class="text-gray-600 mb-2 font-bold">شركة التقنية المتطورة - الرياض</p>
+                        <p class="text-gray-600">الإشراف على فريق المحاسبة، إعداد التقارير المالية، التخطيط المالي الاستراتيجي، ومراجعة العمليات المالية للشركة.</p>
+                    </div>
+                </div>
+
+                <!-- خبرة 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <h3 class="card-heading">مراجع مالي أول</h3>
+                            <span class="text-blue-600 font-bold bg-blue-100 px-3 py-1 rounded-full">2016 - 2020</span>
+                        </div>
+                        <p class="text-gray-600 mb-2 font-bold">مكتب المراجعة الدولي - جدة</p>
+                        <p class="text-gray-600">قيادة فرق المراجعة، إعداد تقارير المراجعة، تقييم الرقابة الداخلية، والتأكد من الامتثال للمعايير المحلية والدولية.</p>
+                    </div>
+                </div>
+
+                <!-- خبرة 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <h3 class="card-heading">محاسب مالي</h3>
+                            <span class="text-blue-600 font-bold bg-blue-100 px-3 py-1 rounded-full">2013 - 2016</span>
+                        </div>
+                        <p class="text-gray-600 mb-2 font-bold">شركة الصناعات الحديثة - الدمام</p>
+                        <p class="text-gray-600">إعداد القوائم المالية، تسجيل المعاملات المالية، المتابعة اليومية للعمليات المالية، وإعداد تقارير الضرائب.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشهادات -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="feature-badge">الشهادات والاعتمادات</span>
+                <h2 class="section-heading">شهادات معتمدة تضمن جودة الخدمات</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">شهادات مهنية معتمدة محلياً ودولياً تضمن تقديم خدمات محاسبية بمعايير الجودة العالمية</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- شهادة 1 -->
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-700 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="card-heading">محاسب قانوني معتمد (CPA)</h3>
+                    <p class="text-gray-600">هيئة المحاسبين القانونيين المعتمدين</p>
+                    <div class="mt-4 text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- شهادة 2 -->
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-700 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="card-heading">مدقق داخلي معتمد (CIA)</h3>
+                    <p class="text-gray-600">معهد المدققين الداخليين</p>
+                    <div class="mt-4 text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- شهادة 3 -->
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-700 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="card-heading">محاسب إداري معتمد (CMA)</h3>
+                    <p class="text-gray-600">معهد المحاسبين الإداريين</p>
+                    <div class="mt-4 text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- شهادة 4 -->
+                <div class="certificate-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-700 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 text-white text-2xl">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="card-heading">ماجستير المحاسبة والتمويل</h3>
+                    <p class="text-gray-600">جامعة الملك سعود</p>
+                    <div class="mt-4 text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات -->
+    <section class="py-16 bg-gradient-to-br from-blue-900 to-indigo-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="feature-badge bg-white/20">مهاراتي المهنية</span>
+                <h2 class="text-3xl md:text-4xl font-black mb-4">مجموعة المهارات والخبرات التي أتمتع بها</h2>
+                <p class="text-blue-200 max-w-2xl mx-auto text-lg">مجموعة متكاملة من المهارات التقنية والإدارية التي تمكنني من تقديم أفضل الخدمات المحاسبية</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div data-aos="fade-right">
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">المحاسبة المالية</span>
+                            <span class="font-bold">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">المراجعة والتدقيق</span>
+                            <span class="font-bold">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">الاستشارات الضريبية</span>
+                            <span class="font-bold">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div data-aos="fade-left">
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">التخطيط المالي</span>
+                            <span class="font-bold">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">برامج المحاسبة</span>
+                            <span class="font-bold">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <div class="flex justify-between mb-2">
+                            <span class="font-bold">إدارة الفريق</span>
+                            <span class="font-bold">87%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 87%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بي -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-br from-blue-900 to-indigo-900 rounded-2xl p-8 md:p-12 text-white text-center">
+                <h2 class="text-3xl md:text-4xl font-black mb-6">هل تريد معرفة المزيد عن خدماتي؟</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto text-blue-200">لا تتردد في التواصل معنا للحصول على استشارة مجانية وتقييم احتياجاتك المحاسبية</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="contact.html" class="btn-primary bg-white text-blue-900 hover:bg-blue-100">
+                        <i class="fas fa-phone ml-2"></i> اتصل بي الآن
+                    </a>
+                    <a href="services.html" class="btn-secondary border-white text-white hover:bg-white hover:text-blue-900">
+                        <i class="fas fa-list ml-2"></i> استكشف الخدمات
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <span class="text-xl font-black">المحاسب المحترف</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">نقدم خدمات محاسبية ومراجعة احترافية لتلبية احتياجات أعمالك وضمان نموها واستقرارها.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-black mb-4 border-b border-gray-800 pb-2">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">من أنا</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">الخدمات</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition">المدونة</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">اتصل بي</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-black mb-4 border-b border-gray-800 pb-2">الخدمات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">المحاسبة المالية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">المراجعة والتدقيق</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">الاستشارات الضريبية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">التخطيط المالي</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">إعداد الميزانيات</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-black mb-4 border-b border-gray-800 pb-2">معلومات الاتصال</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mt-1 ml-2"></i>
+                            <span>شارع المحاسبين، الرياض، المملكة العربية السعودية</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-blue-500 ml-2"></i>
+                            <span>+966 55 123 4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-500 ml-2"></i>
+                            <span>info@accountant.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 المحاسب المحترف. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // تفعيل القائمة المنسدلة للجوال
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            // تفعيل مكتبة AOS للحركات
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+        });
+    </script>
+</body>
+</html>

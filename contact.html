@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المحاسب المحترف | اتصل بي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="relative">
+    <!-- الأشكال العائمة -->
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    
+    <!-- شريط التنقل -->
+    <nav class="nav-blur sticky top-0 z-50 py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <!-- الشعار -->
+                <div class="flex items-center space-x-3 space-x-reverse">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl flex items-center justify-center text-white text-2xl shadow-lg pulse-glow">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black text-gray-800">المحاسب المحترف</span>
+                        <p class="text-xs text-gray-500 mt-1">شريكك المالي الموثوق للنمو المستدام</p>
+                    </div>
+                </div>
+
+                <!-- روابط التنقل -->
+                <div class="hidden lg:flex space-x-8 space-x-reverse">
+                    <a href="index.html" class="nav-link text-gray-600 hover:text-blue-700 transition">الرئيسية</a>
+                    <a href="about.html" class="nav-link text-gray-600 hover:text-blue-700 transition">من أنا</a>
+                    <a href="services.html" class="nav-link text-gray-600 hover:text-blue-700 transition">الخدمات</a>
+                    <a href="blog.html" class="nav-link text-gray-600 hover:text-blue-700 transition">المدونة</a>
+                    <a href="contact.html" class="nav-link text-blue-700 font-bold">اتصل بي</a>
+                </div>
+
+                <!-- زر الاتصال -->
+                <div class="hidden md:block">
+                    <a href="contact.html" class="btn-primary">
+                        <i class="fas fa-phone ml-2"></i> احجز استشارة
+                    </a>
+                </div>
+
+                <!-- زر القائمة المنسدلة للجوال -->
+                <div class="lg:hidden">
+                    <button id="menu-toggle" class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- القائمة المنسدلة للجوال -->
+            <div id="mobile-menu" class="hidden lg:hidden py-6 border-t border-gray-200 mt-4">
+                <a href="index.html" class="block py-3 text-gray-600 hover:text-blue-700 transition border-b border-gray-100">الرئيسية</a>
+                <a href="about.html" class="block py-3 text-gray-600 hover:text-blue-700 transition border-b border-gray-100">من أنا</a>
+                <a href="services.html" class="block py-3 text-gray-600 hover:text-blue-700 transition border-b border-gray-100">الخدمات</a>
+                <a href="blog.html" class="block py-3 text-gray-600 hover:text-blue-700 transition border-b border-gray-100">المدونة</a>
+                <a href="contact.html" class="block py-3 text-blue-700 font-bold">اتصل بي</a>
+                <div class="mt-6">
+                    <a href="contact.html" class="btn-primary w-full text-center block">
+                        <i class="fas fa-phone ml-2"></i> احجز استشارة
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- رأس الصفحة -->
+    <header class="page-header">
+        <div class="container mx-auto px-4">
+            <h1 data-aos="fade-up">اتصل بي</h1>
+            <p data-aos="fade-up" data-aos-delay="200">تواصل معنا للحصول على استشارة محاسبية مجانية وتقييم احتياجاتك المالية</p>
+        </div>
+    </header>
+
+    <!-- قسم معلومات الاتصال -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="section-header" data-aos="fade-up">
+                <h2>تواصل معنا</h2>
+                <p>نحن هنا لمساعدتك في جميع استفساراتك المحاسبية والمالية</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <!-- بطاقة الهاتف -->
+                <div class="contact-info-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-gray-800 mb-4">اتصل بنا</h3>
+                    <p class="text-gray-600 mb-4">تواصل معنا عبر الهاتف للحصول على إجابات فورية لاستفساراتك</p>
+                    <a href="tel:+966551234567" class="text-blue-700 font-bold text-lg">+966 55 123 4567</a>
+                </div>
+
+                <!-- بطاقة البريد الإلكتروني -->
+                <div class="contact-info-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-gray-800 mb-4">البريد الإلكتروني</h3>
+                    <p class="text-gray-600 mb-4">أرسل لنا رسالة وسنرد عليك في أقرب وقت ممكن</p>
+                    <a href="mailto:info@accountant.com" class="text-blue-700 font-bold text-lg">info@accountant.com</a>
+                </div>
+
+                <!-- بطاقة الموقع -->
+                <div class="contact-info-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-gray-800 mb-4">الموقع</h3>
+                    <p class="text-gray-600 mb-4">زورنا في مكتبنا لمناقشة احتياجاتك محاسبية بشكل شخصي</p>
+                    <p class="text-gray-800 font-medium">شارع المحاسبين، الرياض</p>
+                </div>
+
+                <!-- بطاقة ساعات العمل -->
+                <div class="contact-info-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-gray-800 mb-4">ساعات العمل</h3>
+                    <p class="text-gray-600 mb-4">نحن متاحون خلال أوقات العمل الرسمية</p>
+                    <p class="text-gray-800 font-medium">الأحد - الخميس: 8 ص - 5 م</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <!-- نموذج الاتصال -->
+                <div class="lg:col-span-2" data-aos="fade-right">
+                    <div class="contact-form">
+                        <h3 class="text-2xl font-black text-gray-800 mb-6">أرسل رسالة</h3>
+                        <form id="contact-form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">الاسم الكامل</label>
+                                    <input type="text" id="name" class="form-control" placeholder="أدخل اسمك الكامل" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">البريد الإلكتروني</label>
+                                    <input type="email" id="email" class="form-control" placeholder="أدخل بريدك الإلكتروني" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">رقم الهاتف</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="أدخل رقم هاتفك">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">الموضوع</label>
+                                <input type="text" id="subject" class="form-control" placeholder="موضوع رسالتك" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">الرسالة</label>
+                                <textarea id="message" class="form-control" placeholder="اكتب رسالتك هنا..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">
+                                <i class="fas fa-paper-plane ml-2"></i> إرسال الرسالة
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- معلومات إضافية -->
+                <div class="space-y-8" data-aos="fade-left">
+                    <!-- ساعات العمل -->
+                    <div class="business-hours">
+                        <h3 class="text-xl font-black text-gray-800 mb-6">ساعات العمل</h3>
+                        <ul class="hours-list">
+                            <li>
+                                <span class="day">الأحد - الخميس</span>
+                                <span class="time">8:00 ص - 5:00 م</span>
+                            </li>
+                            <li>
+                                <span class="day">الجمعة</span>
+                                <span class="time closed">مغلق</span>
+                            </li>
+                            <li>
+                                <span class="day">السبت</span>
+                                <span class="time">10:00 ص - 2:00 م</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- خدمات سريعة -->
+                    <div class="business-hours">
+                        <h3 class="text-xl font-black text-gray-800 mb-6">الخدمات السريعة</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 ml-2"></i>
+                                <span>استشارة محاسبية مجانية</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 ml-2"></i>
+                                <span>مراجعة مالية سريعة</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 ml-2"></i>
+                                <span>استشارة ضريبية عاجلة</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 ml-2"></i>
+                                <span>حجز موعد في العيادة المحاسبية</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- معلومات الطوارئ -->
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 border border-blue-100">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-xl ml-4">
+                                <i class="fas fa-exclamation-circle text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-black text-gray-800 mb-2">للحالات العاجلة</h4>
+                                <p class="text-gray-600 text-sm mb-3">للحالات العاجلة خارج أوقات العمل، يمكنك التواصل على:</p>
+                                <a href="tel:+966551234567" class="text-blue-700 font-bold">+966 55 123 4567</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخريطة -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="section-header" data-aos="fade-up">
+                <h2>موقعنا</h2>
+                <p>زورنا في مكتبنا لنتناقش في احتياجاتك المحاسبية وجهاً لوجه</p>
+            </div>
+
+            <div class="map-container" data-aos="fade-up" data-aos-delay="200">
+                <!-- <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.255292992987!2d46.67541597570022!3d24.713812778049376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd0!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1697463123456!5m2!1sen!2s" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe> -->
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg">
+                        <i class="fas fa-map-marker-alt text-blue-600 text-2xl mb-4"></i>
+                        <h3 class="text-lg font-black text-gray-800 mb-2">العنوان</h3>
+                        <p class="text-gray-600">شارع المحاسبين، حي الصحافة، الرياض 12345، المملكة العربية السعودية</p>
+                    </div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg">
+                        <i class="fas fa-car text-blue-600 text-2xl mb-4"></i>
+                        <h3 class="text-lg font-black text-gray-800 mb-2">مواقف السيارات</h3>
+                        <p class="text-gray-600">مواقف مجانية متوفرة في المبنى، بالإضافة إلى مواقف عامة قريبة من الموقع</p>
+                    </div>
+                </div>
+                <div class="text-center" data-aos="fade-up" data-aos-delay="500">
+                    <div class="bg-white rounded-2xl p-6 shadow-lg">
+                        <i class="fas fa-subway text-blue-600 text-2xl mb-4"></i>
+                        <h3 class="text-lg font-black text-gray-800 mb-2">المواصلات العامة</h3>
+                        <p class="text-gray-600">محطة مترو قريبة (10 دقائق سيراً على الأقدام)، وحافلات عامة متوفرة</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة للاتصال -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="section-header" data-aos="fade-up">
+                <h2>أسئلة شائعة حول الاتصال</h2>
+                <p>إجابات على الأسئلة الأكثر شيوعًا حول كيفية التواصل معنا</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <!-- سؤال 1 -->
+                    <div class="border-b border-gray-200">
+                        <button class="faq-question w-full flex justify-between items-center py-6 px-8 text-right hover:bg-gray-50 transition">
+                            <span class="text-lg font-bold text-gray-800">كم من الوقت يستغرق الرد على استفساري؟</span>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-8 pb-6 hidden">
+                            <p class="text-gray-600">نحن نحرص على الرد على جميع الاستفسارات في غضون 24 ساعة عمل. بالنسبة للاستفسارات العاجلة، يمكنك الاتصال بنا مباشرة على الرقم +966 55 123 4567 وسنكون سعداء بمساعدتك.</p>
+                        </div>
+                    </div>
+
+                    <!-- سؤال 2 -->
+                    <div class="border-b border-gray-200">
+                        <button class="faq-question w-full flex justify-between items-center py-6 px-8 text-right hover:bg-gray-50 transition">
+                            <span class="text-lg font-bold text-gray-800">هل تقدمون استشارات محاسبية مجانية؟</span>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-8 pb-6 hidden">
+                            <p class="text-gray-600">نعم، نقدم استشارة محاسبية أولية مجانية لمدة 30 دقيقة. خلال هذه الجلسة، سنناقش احتياجاتك المالية ونقدم لك نظرة عامة حول كيفية مساعدتك. يمكنك حجز موعد من خلال نموذج الاتصال أو بالاتصال بنا مباشرة.</p>
+                        </div>
+                    </div>
+
+                    <!-- سؤال 3 -->
+                    <div class="border-b border-gray-200">
+                        <button class="faq-question w-full flex justify-between items-center py-6 px-8 text-right hover:bg-gray-50 transition">
+                            <span class="text-lg font-bold text-gray-800">ما هي المستندات التي أحتاجها للاستشارة الأولى؟</span>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-8 pb-6 hidden">
+                            <p class="text-gray-600">للاستشارة الأولى، ننصح بإحضار أي مستندات مالية ذات صلة مثل القوائم المالية الأخيرة، إقرارات ضريبية سابقة، ومستندات التسجيل التجاري. لكن لا تقلق إذا لم تكن هذه المستندات جاهزة، يمكننا البدء بالنقاش العام حول احتياجاتك.</p>
+                        </div>
+                    </div>
+
+                    <!-- سؤال 4 -->
+                    <div class="">
+                        <button class="faq-question w-full flex justify-between items-center py-6 px-8 text-right hover:bg-gray-50 transition">
+                            <span class="text-lg font-bold text-gray-800">هل تقدمون خدمات عن بُعد؟</span>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform"></i>
+                        </button>
+                        <div class="faq-answer px-8 pb-6 hidden">
+                            <p class="text-gray-600">نعم، نقدم خدمات محاسبية كاملة عن بُعد من خلال منصات آمنة للاتصال ومشاركة المستندات. نحن نستخدم أحدث التقنيات لضمان أمان وسرية معلوماتك المالية أثناء تقديم خدماتنا عن بُعد.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بي -->
+    <section class="py-20 bg-gradient-to-br from-blue-900 to-indigo-900 text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-black mb-6" data-aos="fade-up">هل تحتاج إلى مساعدة محاسبية؟</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto text-blue-200" data-aos="fade-up" data-aos-delay="100">لا تتردد في التواصل معنا للحصول على استشارة مجانية وتقييم احتياجاتك المحاسبية</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+                    <a href="contact.html" class="btn-primary bg-white text-blue-900 hover:bg-blue-100">
+                        <i class="fas fa-phone ml-2"></i> اتصل بي الآن
+                    </a>
+                    <a href="tel:+966551234567" class="btn-secondary border-white text-white hover:bg-white hover:text-blue-900">
+                        <i class="fas fa-mobile-alt ml-2"></i> +966 55 123 4567
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <span class="text-xl font-black">المحاسب المحترف</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">نقدم خدمات محاسبية ومراجعة احترافية لتلبية احتياجات أعمالك وضمان نموها واستقرارها.</p>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-black mb-4 border-b border-gray-800 pb-2">روابط سريعة</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">الرئيسية</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">من أنا</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition">الخدمات</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition">المدونة</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">اتصل بي</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-black mb-4 border-b border-gray-800 pb-2">الخدمات</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">المحاسبة المالية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">المراجعة والتدقيق</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">الاستشارات الضريبية</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">التخطيط المالي</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">إعداد الميزانيات</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-black mb-4 border-b border-gray-800 pb-2">معلومات الاتصال</h3>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-500 mt-1 ml-2"></i>
+                            <span>شارع المحاسبين، الرياض، المملكة العربية السعودية</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-blue-500 ml-2"></i>
+                            <span>+966 55 123 4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-500 ml-2"></i>
+                            <span>info@accountant.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 المحاسب المحترف. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // تفعيل القائمة المنسدلة للجوال
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            // تفعيل مكتبة AOS للحركات
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+            
+            // تفعيل الأسئلة الشائعة
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('i');
+                    
+                    // إغلاق جميع الإجابات الأخرى
+                    document.querySelectorAll('.faq-answer').forEach(ans => {
+                        if (ans !== answer) {
+                            ans.classList.add('hidden');
+                            ans.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
+                            ans.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
+                        }
+                    });
+                    
+                    // تبديل الإجابة الحالية
+                    answer.classList.toggle('hidden');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+            
+            // معالجة نموذج الاتصال
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // هنا يمكنك إضافة كود إرسال النموذج إلى الخادم
+                    alert('شكراً لك! تم استلام رسالتك وسنتواصل معك قريباً.');
+                    contactForm.reset();
+                });
+            }
+            
+            // تأثيرات التمرير السلس
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
